@@ -15,7 +15,7 @@ class UsersController < ApplicationController
 
   def login
     password = params[:password]
-    user = User.where(email == params[:email])
+    user = User.find_by(email = params[:email])
     if user
       if user.password == password
         render plain: true
