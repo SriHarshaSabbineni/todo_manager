@@ -28,6 +28,6 @@ class TodosController < ApplicationController
     todo = Todo.find(id)
     todo.completed = completed
     todo.save!
-    render plain: "updated todo completed status"
+    render plain: "updated todo completed status to #{todo.completed}"
   end
 end
