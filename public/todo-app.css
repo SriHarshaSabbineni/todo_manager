@@ -1,0 +1,94 @@
+body {
+  font-family: sans-serif;
+  max-width: 460px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+ul {
+  list-style: none;
+}
+.TodoItem {
+  display: flex;
+  padding: 2px 8px;
+  align-items: center;
+}
+.TodoItem:hover .Delete {
+  visibility: visible;
+}
+
+.Overdue {
+  margin-left: 10px;
+  color: #c53030;
+  font-size: 12px;
+  display: inline;
+}
+.Delete {
+  margin-left: 8px;
+  height: 22px;
+  visibility: hidden;
+}
+.TodoPage-title {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #453c52;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.TodoAdd {
+  display: flex;
+  height: 32px;
+  align-items: stretch;
+  margin-bottom: 24px;
+}
+.TodoText {
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #453c52;
+  margin-right: 10px;
+  border-radius: 4px;
+  border: 1px solid #bfb8cc;
+}
+.TodoDate {
+  padding: 6px;
+  font-size: 14px;
+  color: #453c52;
+  margin-right: 10px;
+  border-radius: 4px;
+  border: 1px solid #bfb8cc;
+}
+.TodoAdd-button {
+  font-size: 14px;
+  color: white;
+  background-color: #48bb78;
+  border: 1px solid transparent;
+  padding: 6px 22px;
+  border-radius: 4px;
+}
+.TodoSection {
+  margin-bottom: 20px;
+}
+.TodoSection-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 8px;
+  line-height: 1.4;
+}
+.TodoSection-head {
+  display: flex;
+  align-items: center;
+}
+.RemainingCount {
+  font-size: 12px;
+  font-weight: 100;
+  color: lightslategray;
+}
+.ShowDate {
+  font-size: 12px;
+  font-weight: 100;
+  margin-left: 10px;
+  color: lightslategray;
+}
+.TodoItem-text {
+  font-size: 14px;
+  font-weight: 500;
+}

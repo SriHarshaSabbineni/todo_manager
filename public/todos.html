@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Todo Page</title>
+    <link rel="stylesheet" type="text/css" href="todo-app.css" />
+  </head>
+  <body>
+    <main>
+      <h1 class="TodoPage-title">My To-do List</h1>
+      <section class="TodoAdd">
+        <input class="TodoText" placeholder="What's next?" type="text" />
+        <input class="TodoDate" type="date" />
+        <input class="TodoAdd-button" type="button" value="Add" />
+      </section>
+      <section class="TodoSection">
+        <div class="TodoSection-head">
+          <h2 class="TodoSection-title">Due Today</h2>
+          <p class="RemainingCount">0/4</p>
+        </div>
+        <ul class="TodoList">
+          <li class="TodoItem">
+            <input type="checkbox" />
+            <p class="TodoItem-text">Type something</p>
+            <p class="Overdue">Overdue</p>
+            <img class="Delete" src="delete.png" />
+          </li>
+          <li class="TodoItem">
+            <input type="checkbox" />
+            <p class="TodoItem-text">Type something</p>
+            <img class="Delete" src="delete.png" />
+          </li>
+        </ul>
+      </section>
+      <section class="TodoSection">
+        <div class="TodoSection-head">
+          <h2 class="TodoSection-title">Due Tomorrow</h2>
+          <p class="RemainingCount">0/4</p>
+        </div>
+
+        <ul class="TodoList">
+          <li class="TodoItem">
+            <input type="checkbox" />
+            <p class="TodoItem-text">Type something</p>
+            <img class="Delete" src="delete.png" />
+          </li>
+        </ul>
+      </section>
+      <section class="TodoSection">
+        <div class="TodoSection-head">
+          <h2 class="TodoSection-title">Remaining</h2>
+          <p class="RemainingCount">0/3</p>
+        </div>
+
+        <ul class="TodoList">
+          <li class="TodoItem">
+            <input type="checkbox" />
+            <p class="TodoItem-text">Type something</p>
+            <p class="ShowDate">Jan 21</p>
+            <img class="Delete" src="delete.png" />
+          </li>
+          <li class="TodoItem">
+            <input type="checkbox" />
+            <p class="TodoItem-text">Type something</p>
+            <p class="ShowDate">Jan 22</p>
+            <img class="Delete" src="delete.png" />
+          </li>
+          <li class="TodoItem">
+            <input type="checkbox" />
+            <p class="TodoItem-text">Type something</p>
+            <p class="ShowDate">Jan 23</p>
+            <img class="Delete" src="delete.png" />
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
