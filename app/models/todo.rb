@@ -4,18 +4,6 @@ class Todo < ActiveRecord::Base
     "#{id}. #{due_date} #{todo_text} #{is_completed}"
   end
 
-  def due_today?
-    due_date = Date.today
-  end
-
-  def due_later?
-    due_date > Date.today
-  end
-
-  def overdue?
-    due_date < Date.today
-  end
-
   def self.completed
     all.where(completed: true)
   end

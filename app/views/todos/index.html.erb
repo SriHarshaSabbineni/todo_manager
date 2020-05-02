@@ -7,7 +7,7 @@
   </section>
   <%= render partial: "todo-section", locals: {
     section_title: "Overdue",
-    todos: Todo.overdue
+    todos: Todo.overdue.completed
   } %>
   <%= render partial: "todo-section", locals: {
     section_title: "Due Today",
