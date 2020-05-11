@@ -6,7 +6,12 @@
     <ul class="TodoList">
       <% todos.each do |todo| %>
       <li class="TodoItem">
-        <input type="checkbox" <%= render plain: "checked" if todo.completed %>/>
+       <%= form_with(url: "/todos/#{todo.id}", method: "PUT") do%>
+        <input type="checkbox" name="completed" <%= render plain: "checked" if todo.completed %>
+         onclick="this.form.submit()"
+        />
+
+       <% end %>
         <p class="TodoItem-text" style="text-decoration: <%=render plain: "line-through" if todo.completed%>"> <%=todo.todo_text%> </p>
         <p class="ShowDate"><%= todo.due_date if todo.due_date != Date.today %></p>
         <img class="Delete" src="delete.png" />
