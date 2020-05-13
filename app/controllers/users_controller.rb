@@ -10,6 +10,6 @@ class UsersController < ApplicationController
       email: params[:email],
       password: params[:password],
     )
-    redirect_to root_path
+    redirect_to "/home"
   end
 end
