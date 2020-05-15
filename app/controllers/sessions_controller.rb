@@ -1,4 +1,6 @@
 class SessionsController < ApplicationController
+  skip_before_action :ensure_user_logged_in
+
   def new
     #renders new.html.erb by default
   end
@@ -6,7 +8,8 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by(email: params[:email])
     if user && user.authenticate(params[:password])
-      render plain: "logged in successfully!"
+      session[:current_user_id] = user.id
+      redirect_to "/"
     else
       render plain: "You have entered incorrect password."
     end
