@@ -34,6 +34,10 @@ Rails.application.routes.draw do
 
 
 
+  delete "/signout" => "sessions#destroy", as: :destroy_session
+
+
+
   post "/signin" => "sessions#create", as: :sessions
 
 end
